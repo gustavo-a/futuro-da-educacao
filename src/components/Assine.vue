@@ -1,5 +1,5 @@
 <template>
-  <section class="py-32" id="assine-bloco">
+  <section class="bg-custom-blue-2 py-32" id="assine-bloco">
     <div class="container px-4">
       <div class="flex justify-center mb-16">
         <h2 class="title-1">
@@ -16,49 +16,47 @@
             De R$ <span class="line-through">469,00</span>
           </div> -->
           <span>Por apenas:</span>
-          <div class="grid font-sans2 text-cafe-verde-amarelado my-4">
+          <div class="grid font-sans2 font-bold text-custom-red my-4">
             <div class="text-2xl">10x de</div>
-            <div class="text-5xl">R$ 96,70</div>
+            <div class="text-5xl">R$ 00,00</div>
           </div>
-          <span>Total:R$967,00</span>
+          <span>Total:R$000,00</span>
         </div>
         <div class="w-full md:w-1/3 text-white">
           <p class="mb-4 font-bold text-justify">
-            Um curso sobre Produtividade para quem quer ir além das ações
-            táticas e mergulhar na estratégia: desenvolver um Olhar Produtivo.
-            Provocativo, irreverente e com um material de apoio riquíssimo que
-            em sua maior parte você não encontra aqui no Brasil.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Accusantium, et quisquam saepe blanditiis quo pariatur ut.
+            Temporibus.
           </p>
           <ul class="lista text-justify">
             <li>
-              Acesso ilimitado por 12 meses (vitalício para os assinantes do
-              Café Brasil Premium)
+              Lorem ipsum dolor sit amet consectetur.
             </li>
             <li>
-              Grupo exclusivo no Telegram para perguntas, respostas e troca de
-              ideias em relação ao tema
+              Lorem ipsum dolor sit amet.
             </li>
             <li>
-              Live semanal durante a duração do curso, com o autor Luciano
-              Pires.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </li>
             <li>
-              Forma interativa que permite consumo em vídeo, áudio ou texto,
-              quando, onde, como e quanto você quiser
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+              beatae!
             </li>
-            <li>Conteúdo com aplicação imediata no dia a dia</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
             <li>
-              Oportunidade de adquirir novos hábitos e habilidades que vão
-              transformar sua visão de mundo e maneira de fazer e consumir.
+              Lorem ipsum, dolor sit amet consectetur adipisicing.
             </li>
           </ul>
           <call-to-action
-            filled="bege"
+            filled="blue1"
             :link="$static.generalData.hotmartUrl"
             size="lg"
             class="shadow-2xl mt-6 transform transition-transform duration-300 hover:scale-110"
           >
-            <span class="pr-3 font-bold">Inscreva-se</span>
+            <span class="pr-3 text-custom-darker-blue font-bold">
+              Inscreva-se
+            </span>
+            <RightArrow class="text-custom-darker-blue fill-current" />
           </call-to-action>
         </div>
       </div>
@@ -76,10 +74,12 @@ query{
 
 <script>
 import CTA from '~/components/shared/Cta'
+import RightArrow from '~/assets/images/right-arrow.svg'
 
 export default {
   components: {
-    'call-to-action': CTA
+    'call-to-action': CTA,
+    RightArrow
   }
 }
 </script>

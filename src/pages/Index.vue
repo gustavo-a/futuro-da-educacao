@@ -1,12 +1,12 @@
 <template>
   <Layout>
-    <div class="">
+    <div class="bg-custom-darker-blue">
       <section class="bg-luciano-wrapper flex">
         <div class="container pb-12 bg-luciano mt-auto">
           <div class="flex pt-8 md:pt-32 pb-8 md:pb-20">
             <div class="sm:w-2/3 lg:w-2/5 px-4">
               <h1 class="quote">
-                Como aumentar a sua performance em meio a adversidades.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               </h1>
             </div>
             <div
@@ -17,7 +17,7 @@
                   <iframe
                     width="956"
                     height="538"
-                    src="https://www.youtube.com/embed/5MApz1nUIiQ"
+                    src="https://www.youtube.com/embed/1lveKJ4cGfw"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
@@ -32,48 +32,54 @@
           </div>
           <div class="flex justify-start mb-32 md:mb-0 md:mt-0 px-4">
             <call-to-action
-              filled="bege"
+              filled="blue1"
               :link="$static.generalData.hotmartUrl"
               size="lg"
               class="shadow-2xl transform transition-transform duration-300 hover:scale-110"
             >
-              <span class="pr-3 font-bold">Inscreva-se</span> <RightArrow />
+              <span class="pr-3 text-custom-darker-blue font-bold"
+                >Inscreva-se</span
+              >
+              <RightArrow class="text-custom-darker-blue fill-current" />
             </call-to-action>
           </div>
         </div>
       </section>
     </div>
-    <section class=" pt-16 pb-8">
+    <section class="bg-custom-darker-blue pt-16 pb-8">
       <div class="container">
         <div class="flex flex-wrap text-white font-sans2">
           <div class="w-full md:w-1/2 lg:w-1/4 px-4 my-4 lg:m-0 flex">
-            <div class="w-1/3 flex justify-center"></div>
+            <div class="w-1/3 flex justify-center">
+              <Work class="text-custom-blue-1 fill-current" />
+            </div>
             <div class="w-2/3 self-center md:self-start">
-              Tenha o olhar treinado para a busca sistemática e contínua pela
-              produtividade, independentemente de softwares, computadores ou
-              processos
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </div>
           </div>
           <div class="w-full md:w-1/2 lg:w-1/4 px-4 my-4 lg:m-0 flex">
-            <div class="w-1/3 flex justify-center"></div>
+            <div class="w-1/3 flex justify-center">
+              <Work class="text-custom-blue-1 fill-current" />
+            </div>
             <div class="w-2/3 self-center md:self-start">
-              Aprenda a fazer mais com menos, criar sistemas resistentes e mudar
-              hábitos
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore.
             </div>
           </div>
           <div class="w-full md:w-1/2 lg:w-1/4 px-4 my-4 lg:m-0 flex">
-            <div class="w-1/3 flex justify-center"></div>
+            <div class="w-1/3 flex justify-center">
+              <Work class="text-custom-blue-1 fill-current" />
+            </div>
             <div class="w-2/3 self-center md:self-start">
-              Prepare-se para levar sua capacidade de produção individual ao
-              limite, sozinho ou em equipe, mantendo uma empresa enxuta, com
-              custos baixos e flexível conforme os tempos atuais exigem
+              Lorem ipsum dolor sit amet consectetur adipisicing.
             </div>
           </div>
           <div class="w-full md:w-1/2 lg:w-1/4 my-4 lg:m-0 px-4 flex">
-            <div class="w-1/3 flex justify-center"></div>
+            <div class="w-1/3 flex justify-center">
+              <Work class="text-custom-blue-1 fill-current" />
+            </div>
             <div class="w-2/3 self-center md:self-start">
-              Conheça a produtividade antifrágil, a habilidade de sair das
-              crises melhor do que nelas entramos
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
+              odio.
             </div>
           </div>
         </div>
@@ -82,67 +88,65 @@
     <section class="pt-20 pb-32">
       <div class="container">
         <div class="md:w-2/3 xl:w-1/3 m-auto">
-          <h2 class="title-1">
-            Produtividade começa com sua visão do mundo
+          <h2 class="title-1 text-custom-red">
+            Lorem ipsum dolor sit amet.
           </h2>
         </div>
         <div class="flex justify-center">
           <div
-            class="wysiwyg md:w-11/12 lg:w-2/3 my-16 mx-4 sm:mx-8 text-justify"
+            class="wysiwyg font-sans1 md:w-11/12 lg:w-2/3 my-16 mx-4 sm:mx-8"
           >
             <p>
-              Antes de sair comprando softwares e computadores e desenvolver
-              habilidades práticas, é preciso preparar seu mindset para a
-              produtividade. É preciso ter um Olhar Produtivo. Produtividade
-              Antifrágil é um curso sem indicação de ferramentas, fórmulas
-              prontas ou aquelas fórmulas mágicas que dizem que "se ele pode,
-              você pode também". Não, nem sempre podemos.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad veniam
+              modi aliquam et repellendus sunt quo, commodi recusandae, debitis
+              tempore quae labore. Obcaecati est officiis neque, sed saepe
+              perspiciatis debitis deserunt eveniet tempore!
             </p>
             <p>
-              <b>PRODUTIVIDADE ANTIFRÁGIL</b> é essencial porque vem para
-              provocar você a rever conceitos, a mudar hábitos e se preparar
-              para os ciclos de queda e crescimento. O curso conta também com um
-              material de apoio único, que você não encontrará em nenhum outro
-              lugar. Mas vale cada segundo de seu esforço por consumi-lo.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+              ipsam eaque corrupti dicta pariatur! Dignissimos perspiciatis ad
+              illo inventore, <b>excepturi aperiam accusamus</b> sed repellat
+              quasi in quo enim recusandae eaque libero! Similique sit deleniti
+              eum cumque possimus odit, explicabo debitis necessitatibus nulla
+              eaque modi totam?
             </p>
             <p>
-              O curso é uma experiência imersiva, feito para você mergulhar mais
-              fundo, inclusive com a possibilidade de consumir livros que
-              indicarei e que em muitos casos, sequer estão disponíveis no
-              Brasil, mas que eu sumarizo de forma profunda e comentada. Você
-              pode escolher assistir as aulas em vídeo, em seguida ler os PDFs e
-              ouvir os podcasts como, quando e onde quiser, e assim se
-              desenvolver na direção do Olhar Produtivo.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+              iure aspernatur similique accusantium voluptatibus optio omnis
+              quae totam ullam quod, hic obcaecati iste reiciendis, cumque qui
+              rerum quas dolore quos! Fugiat maiores sit mollitia laudantium rem
+              velit est?
             </p>
             <h3 class="title-2">
-              As inscrições serão encerradas muito em breve. Então, não perca
-              tempo.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae.
             </h3>
           </div>
         </div>
         <div class="flex justify-center">
           <call-to-action
-            filled="bege"
+            filled="blue1"
             :link="$static.generalData.hotmartUrl"
             size="lg"
             class="shadow-2xl transform transition-transform duration-300 hover:scale-110"
           >
-            <span class="pr-3 font-bold">Inscreva-se</span> <RightArrow />
+            <span class="pr-3 text-custom-darker-blue font-bold"
+              >Inscreva-se</span
+            >
+            <RightArrow class="text-custom-darker-blue fill-current" />
           </call-to-action>
         </div>
       </div>
     </section>
     <!-- Outras sessões -->
     <Autor />
-    <Depoimentos />
-    <Modulos />
     <BlocoCTA />
-    <Alunos />
+    <Depoimentos />
 
     <section class="py-32">
       <div class="container px-4">
         <div class="flex justify-center mb-16">
-          <h2 class="title-1">
+          <h2 class="title-1 text-custom-red">
             Quem vai se beneficiar deste conteúdo
           </h2>
         </div>
@@ -150,9 +154,13 @@
           <div class="w-full md:w-1/2 px-4">
             <div class="wysiwyg">
               <p class="text-center">
-                Qualquer pessoa preocupada em ampliar sua capacidade de
-                execução, em melhorar continuamente e aumentar a velocidade de
-                suas decisões e performance, sem perder a qualidade.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatem, architecto suscipit deserunt molestias nihil et
+                perspiciatis dignissimos soluta laborum ullam maxime tenetur
+                alias culpa nemo ratione officiis mollitia natus esse impedit
+                expedita. Repellendus possimus soluta illum nulla voluptatibus
+                autem delectus hic necessitatibus eligendi harum ducimus a illo,
+                fugiat velit voluptates odio optio sit ratione veniam deserunt?
               </p>
             </div>
           </div>
@@ -175,12 +183,12 @@ query{
 <script>
 import PlayButton from '~/assets/images/play.svg'
 import RightArrow from '~/assets/images/right-arrow.svg'
+import Work from '~/assets/images/work.svg'
 import CTA from '~/components/shared/Cta'
 
 import Autor from '~/components/Autor'
 import Modulos from '~/components/Modulos'
 import Depoimentos from '~/components/Depoimentos'
-import Alunos from '~/components/Alunos'
 import Assine from '~/components/Assine'
 import Popup from '~/components/shared/Popup'
 import BlocoCTA from '~/components/BlocoCTA'
@@ -207,10 +215,10 @@ export default {
     Modulos,
     Autor,
     Depoimentos,
-    Alunos,
     BlocoCTA,
     Assine,
-    Popup
+    Popup,
+    Work
   },
   data() {
     return {
@@ -222,7 +230,7 @@ export default {
 
 <style lang="scss">
 .quote {
-  @apply .text-white .font-sans1 .text-5xl .font-bold .relative .inline .leading-tight;
+  @apply .text-white .font-sans2 .text-5xl .font-bold .relative .inline .leading-tight;
 
   @media (max-width: 1024px) {
     @apply .text-3xl;
@@ -238,7 +246,7 @@ export default {
 }
 ul.lista {
   li {
-    list-style-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHZpZXdCb3g9IjAgMCA2IDYiPjxyZWN0IHdpZHRoPSI2IiBoZWlnaHQ9IjYiIGZpbGw9IiNBNEM1NDYiLz48L3N2Zz4=);
+    list-style-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHZpZXdCb3g9IjAgMCA2IDYiPjxyZWN0IHdpZHRoPSI2IiBoZWlnaHQ9IjYiIGZpbGw9IiM0MkU5RDYiLz48L3N2Zz4=);
     margin-bottom: 0.25rem;
   }
 }
@@ -257,8 +265,8 @@ ul.lista {
 
   &::after {
     content: '';
-    @apply .block .m-auto .mt-6;
-    height: 5px;
+    @apply .block .m-auto .mt-6 text-current bg-current;
+    height: 3px;
     width: 125px;
   }
 }

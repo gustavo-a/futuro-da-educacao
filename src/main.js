@@ -3,6 +3,10 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 
+import 'typeface-merriweather'
+import 'typeface-open-sans'
+import 'typeface-raleway'
+
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)

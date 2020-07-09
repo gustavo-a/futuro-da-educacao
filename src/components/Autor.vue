@@ -1,44 +1,28 @@
 <template>
-  <section class="">
-    <div class="container py-16">
+  <section class="bg-custom-darker-blue">
+    <div class="container py-32">
       <div class="flex flex-wrap justify-around">
         <div class="lg:w-1/3 px-4">
-          <g-image
-            src=""
-            quality="80"
-            alt="Luciano Pires"
-            class="transform -translate-y-32"
-          />
+          <g-image src="~/assets/images/autor.png" quality="80" alt="Autor" />
         </div>
         <div class="lg:w-1/2 px-4">
           <div class="title-1">Conheça o autor</div>
-          <div class="wysiwyg text-white text-justify">
+          <div class="wysiwyg text-white">
             <p>
-              Luciano Pires é um personal trainer de fitness intelectual que
-              respeita a inteligência de seu público.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              nisi alias facere fugiat nam ad.
             </p>
             <p>
-              Luciano é um criador serial de conteúdo à frente do Café Brasil
-              Editorial, uma empresa mais do que enxuta, mas com uma capacidade
-              excepcional de produção. Ele publica semanalmente 4 episódios dos
-              podcasts Café Brasil, LíderCast e Cafezinho, além de produzir
-              videocasts, Lives, intensa produção nas mídias sociais, palestras,
-              livros e artigos e conduzir o Café Brasil Premium, uma plataforma
-              de conteúdo por assinatura recorrente. Isso só é possível com um
-              Olhar Produtivo.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+              numquam tenetur ab quos optio, suscipit delectus vero voluptates
+              minus nemo! Dolor quis consectetur doloremque sapiente, eligendi
+              quo nisi animi neque!
             </p>
             <p>
-              Luciano está interessado em ajudar você e sua equipe a refinar sua
-              capacidade de julgamento e tomada de decisão, e neste curso aplica
-              40 anos de experiência como executivo de multinacional,
-              empreendedor, podcaster e muito mais. Conheça mais sobre o Luciano
-              em
-              <a
-                class="text-cafe-verde-amarelado"
-                href="https://lucianopires.com.br"
-                target="_blank"
-                >lucianopires.com.br</a
-              >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus ducimus deleniti voluptates, minus id eos praesentium
+              ratione sapiente cumque commodi dolor sed assumenda eius animi, at
+              porro similique perferendis labore amet ut quas illum laudantium.
             </p>
           </div>
         </div>

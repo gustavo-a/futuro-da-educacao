@@ -1,26 +1,28 @@
 <template>
   <div class="depoimentoWrapper w-11/12 sm:w-2/3 md:w-5/12 lg:w-1/5">
     <div
-      class="depoimento bg-guten-cinza-1 cursor-pointer overflow-hidden relative flex rounded-lg mb-16 lg:m-0"
+      class="depoimento cursor-pointer overflow-hidden relative flex rounded-lg mb-16 lg:m-0"
       @click="abrirDepoimento"
     >
       <slot name="imagem" />
-      <div class="absolute top-0 bottom-0 table m-auto w-full z-10">
+      <div class="absolute top-0 bottom-0 table m-auto w-full z-30">
         <PlayButton class="play" />
       </div>
-      <div
-        class="absolute p-4 bottom-0 h-full w-full flex flex-col justify-end depoimento__content"
-      >
+    </div>
+    <section class="flex">
+      <div class="p-4 bottom-0 h-full w-full flex flex-col justify-end">
         <div
-          class="font-sans2 text-xl font-bold text-cafe-verde-amarelado italic"
+          class="font-serif text-xl font-bold text-cafe-verde-amarelado italic"
         >
           <slot name="nome" />
         </div>
-        <div class="text-white text-sm">
+        <div
+          class="font-sans1 text-custom-darker-blue italic font-semibold text-lg"
+        >
           <slot name="descricao" />
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -49,17 +51,18 @@ export default {
 .depoimento {
   height: 300px;
 
-  @media (max-width: 767px) {
-    height: 400px;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5) 50%);
   }
 
-  &__content {
-    background: linear-gradient(
-      180deg,
-      rgba($color: #322153, $alpha: 0.1) 0%,
-      rgba($color: #322153, $alpha: 0.7) 60%,
-      rgba($color: #322153, $alpha: 1) 90%
-    );
+  @media (max-width: 767px) {
+    height: 400px;
   }
 }
 img {

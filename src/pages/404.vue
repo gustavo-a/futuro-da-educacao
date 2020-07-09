@@ -13,7 +13,7 @@
             Oops, parece que essa página não existe...
           </p>
           <call-to-action
-            filled="bege"
+            filled="blue1"
             :link="$static.generalData.hotmartUrl"
             size="lg"
             class="shadow-2xl mt-8 transform transition-transform duration-300 hover:scale-110"

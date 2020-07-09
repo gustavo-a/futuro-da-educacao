@@ -1,5 +1,5 @@
 <template>
-  <header class="">
+  <header class="bg-custom-darker-blue">
     <!-- <Countdown
       :starttime="new Date()"
       endtime="Jun 19, 2020 0:59:59"
@@ -20,36 +20,28 @@
     <div class="container bg-linha">
       <div class="flex flex-wrap justify-between py-4">
         <g-link to="/" class="px-4 w-full sm:w-1/2" id="logo-header">
-          <g-image
-            quality="100"
-            height="60"
-            src=""
-            fit="inside"
-            alt="Guten Morgen GO"
-          />
+          <Logo />
         </g-link>
         <div
-          class="pr-2 sm:px-4 ml-auto sm:ml-0 text-left grid sm:flex items-center"
-          style="grid-gap: 5px"
+          class="pr-2 sm:px-4 ml-auto sm:ml-0 text-left grid sm:flex items-start"
         >
           <call-to-action
-            filled="bege"
-            border
+            filled="blue1"
             :link="$static.generalData.hotmartUrl"
             size="sm"
             class="sm:mx-2 text-sm sm:text-base"
           >
-            <span class="text-cafe-ardosia">Inscreva-se</span>
+            <span class="text-custom-darker-blue font-bold">Inscreva-se</span>
           </call-to-action>
           <!-- https://produtividadeantifragil.club.hotmart.com -->
           <call-to-action
             border
-            link="https://produtividadeantifragil.club.hotmart.com"
+            link="https://hotmart.com"
             size="sm"
             class="ml-2 sm:mx-2 text-sm sm:text-base"
             style="display:contents"
           >
-            <span class="pl-3 text-cafe-verde-amarelado">Login</span>
+            <User /> <span class="pl-3 text-cafe-verde-amarelado">Login</span>
           </call-to-action>
         </div>
       </div>
@@ -68,12 +60,16 @@ query{
 <script>
 import CTA from '~/components/shared/Cta'
 import Countdown from '~/components/shared/Countdown'
+import Logo from '~/assets/images/logo.svg'
+import User from '~/assets/images/user.svg'
 
 export default {
   name: 'DefaultHeader',
   components: {
     'call-to-action': CTA,
-    Countdown
+    Countdown,
+    Logo,
+    User
   }
 }
 </script>
