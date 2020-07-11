@@ -3,7 +3,7 @@
     <div class="bg-custom-darker-blue">
       <section class="flex">
         <div class="container relative pb-12 mt-auto">
-          <GirlVR class="absolute top-0 right-0 left-0 m-auto h-full" />
+          <GirlVR class="absolute top-0 right-0 left-0 m-auto h-full z-0" />
           <div class="flex pt-8 md:pt-32 pb-8 md:pb-20">
             <Particles
               id="particles-header-left"
@@ -49,21 +49,9 @@
               </h1>
             </div>
             <div
-              class="hidden md:w-1/3 lg:w-1/2 px-4 md:flex justify-center align-middle"
+              class="hidden md:w-1/3 lg:w-1/2 px-4 md:flex justify-center align-middle z-10"
             >
-              <Popup v-model="videoPopup">
-                <div class="video-container">
-                  <iframe
-                    width="956"
-                    height="538"
-                    :src="$static.metadata.indexPage.header.videoUrl"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              </Popup>
-              <button @click="videoPopup = !videoPopup">
+              <button @click="openVideo">
                 <PlayButton />
                 <div class="text-custom-blue-1 font-sans1 font-bold mt-3">
                   Assista ao Vídeo
@@ -218,7 +206,6 @@ import Autor from '~/components/Autor'
 import Modulos from '~/components/Modulos'
 import Depoimentos from '~/components/Depoimentos'
 import Assine from '~/components/Assine'
-import Popup from '~/components/shared/Popup'
 import BlocoCTA from '~/components/BlocoCTA'
 
 import Particles from 'particles.vue'
@@ -247,14 +234,15 @@ export default {
     Depoimentos,
     BlocoCTA,
     Assine,
-    Popup,
     Cpu,
     Particles,
     GirlVR
   },
-  data() {
-    return {
-      videoPopup: false
+  methods: {
+    openVideo() {
+      this.$modal.show('modal-video', {
+        videoLink: this.$static.metadata.indexPage.videoUrl
+      })
     }
   }
 }

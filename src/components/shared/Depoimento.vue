@@ -28,7 +28,6 @@
 
 <script>
 import PlayButton from '~/assets/images/play.svg'
-import Popup from '~/components/shared/Popup'
 
 export default {
   name: 'Depoimento',
@@ -36,8 +35,7 @@ export default {
     videoLink: String
   },
   components: {
-    PlayButton,
-    Popup
+    PlayButton
   },
   methods: {
     abrirDepoimento() {
