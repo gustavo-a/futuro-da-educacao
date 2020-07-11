@@ -18,7 +18,7 @@
       :clickEffect="true"
       :clickMode="false"
     />
-    <div class="container px-32">
+    <div class="container lg:px-16 xl:px-32">
       <div class="flex justify-center mb-16">
         <h2 class="title-1">
           Depoimentos
@@ -143,17 +143,12 @@ export default {
       bound: true,
       peek: { before: 0, after: 0 },
       breakpoints: {
-        1300: {
-          perView: 4,
-          gap: 40,
-          peek: { before: 0, after: 0 }
-        },
-        1023: {
+        1280: {
           perView: 3,
           gap: 40,
           peek: { before: 0, after: 0 }
         },
-        800: {
+        767: {
           perView: 2,
           gap: 40,
           peek: { before: 0, after: 0 }
@@ -161,12 +156,17 @@ export default {
         639: {
           perView: 1,
           gap: 30,
-          peek: { before: 0, after: 250 }
+          peek: { before: 100, after: 200 }
         },
         530: {
           perView: 1,
           gap: 30,
-          peek: { before: 0, after: 100 }
+          peek: { before: 100, after: 100 }
+        },
+        420: {
+          perView: 1,
+          gap: 30,
+          peek: { before: 30, after: 30 }
         }
       }
     }).mount()

@@ -153,8 +153,8 @@
         </div>
         <div class="flex flex-wrap justify-center">
           <div class="w-full px-4">
-            <div class="wysiwyg flex">
-              <div class="w-1/2">
+            <div class="wysiwyg flex flex-wrap">
+              <div class="w-full md:w-1/2">
                 <ul class="lista">
                   <li>Educadores;</li>
                   <li>Empreendedores de Educação;</li>
@@ -162,7 +162,7 @@
                   <li>Pais;</li>
                 </ul>
               </div>
-              <div class="w-1/2">
+              <div class="w-full md:w-1/2">
                 <ul class="lista">
                   <li>Alunos;</li>
                   <li>Estudantes e Pesquisadores de Pedagogia;</li>
@@ -223,7 +223,7 @@ export default {
           'Um curso sobre Produtividade para quem quer ir além das ações táticas e mergulhar na estratégia: desenvolver um Olhar Produtivo. Provocativo, irreverente e com um material de apoio riquíssimo que em sua maior parte você não encontra aqui no Brasil.'
       }
     ],
-    link: [{ rel: 'canonical', href: 'https://produtividadeantifragil.com.br' }]
+    link: [{ rel: 'canonical', href: '' }]
   },
   components: {
     PlayButton,
@@ -241,8 +241,13 @@ export default {
   methods: {
     openVideo() {
       this.$modal.show('modal-video', {
-        videoLink: this.$static.metadata.indexPage.videoUrl
+        videoLink: this.videoLink
       })
+    }
+  },
+  computed: {
+    videoLink() {
+      return this.$static.metadata.indexPage.videoUrl
     }
   }
 }

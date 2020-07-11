@@ -1,7 +1,7 @@
 <template>
   <div class="depoimentoWrapper w-11/12 sm:w-2/3 md:w-5/12 lg:w-1/5">
     <div
-      class="depoimento cursor-pointer overflow-hidden relative flex rounded-lg mb-16 lg:m-0"
+      class="depoimento cursor-pointer overflow-hidden relative flex rounded-lg"
       @click="abrirDepoimento"
     >
       <slot name="imagem" />

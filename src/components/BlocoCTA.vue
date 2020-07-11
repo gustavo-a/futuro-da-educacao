@@ -57,10 +57,4 @@ export default {
 .bg-gradient {
   background: linear-gradient(#0a2b3f 50%, #42e9d6 50%);
 }
-
-.cta-bg {
-  @media (max-width: 767px) {
-    background: #a4c546;
-  }
-}
 </style>

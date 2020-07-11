@@ -8,6 +8,10 @@
       name="modal-video"
       classes="p-8 bg-white rounded"
       height="auto"
+      width="70%"
+      :maxWidth="1000"
+      :minWidth="300"
+      :adaptive="true"
       @before-open="modalVideoData"
     >
       <div class="video-container">
