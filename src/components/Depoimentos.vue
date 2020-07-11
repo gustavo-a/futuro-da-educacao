@@ -1,5 +1,23 @@
 <template>
   <section id="alunos-section" class="pt-10 pb-32 relative bg-custom-blue-1">
+    <Particles
+      id="particles-depoimentos-right"
+      color="#0A2B3F"
+      :particleOpacity="0.7"
+      :particlesNumber="100"
+      shapeType="circle"
+      :particleSize="4"
+      linesColor="#0A2B3F"
+      :linesWidth="1"
+      :lineLinked="true"
+      :linesOpacity="0.4"
+      :linesDistance="150"
+      :moveSpeed="3"
+      :hoverEffect="true"
+      hoverMode="grab"
+      :clickEffect="true"
+      :clickMode="false"
+    />
     <div class="container px-32">
       <div class="flex justify-center mb-16">
         <h2 class="title-1">
@@ -109,10 +127,12 @@
 <script>
 import Depoimento from '~/components/shared/Depoimento'
 import Glide from '@glidejs/glide'
+import Particles from 'particles.vue'
 
 export default {
   components: {
-    Depoimento
+    Depoimento,
+    Particles
   },
   mounted() {
     new Glide('.glide', {
@@ -192,5 +212,12 @@ export default {
       }
     }
   }
+}
+
+#particles-depoimentos-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 </style>

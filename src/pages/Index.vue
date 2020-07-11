@@ -1,12 +1,51 @@
 <template>
   <Layout>
     <div class="bg-custom-darker-blue">
-      <section class="bg-luciano-wrapper flex">
-        <div class="container pb-12 bg-luciano mt-auto">
+      <section class="flex">
+        <div class="container relative pb-12 mt-auto">
+          <GirlVR class="absolute top-0 right-0 left-0 m-auto h-full" />
           <div class="flex pt-8 md:pt-32 pb-8 md:pb-20">
+            <Particles
+              id="particles-header-left"
+              class="tsparticles"
+              color="#dedede"
+              :particleOpacity="0.7"
+              :particlesNumber="100"
+              shapeType="circle"
+              :particleSize="4"
+              linesColor="#dedede"
+              :linesWidth="1"
+              :lineLinked="true"
+              :linesOpacity="0.4"
+              :linesDistance="150"
+              :moveSpeed="3"
+              :hoverEffect="true"
+              hoverMode="grab"
+              :clickEffect="true"
+              :clickMode="false"
+            />
+            <Particles
+              id="particles-header-right"
+              class="tsparticles"
+              color="#dedede"
+              :particleOpacity="0.7"
+              :particlesNumber="100"
+              shapeType="circle"
+              :particleSize="4"
+              linesColor="#dedede"
+              :linesWidth="1"
+              :lineLinked="true"
+              :linesOpacity="0.4"
+              :linesDistance="150"
+              :moveSpeed="3"
+              :hoverEffect="true"
+              hoverMode="grab"
+              :clickEffect="true"
+              :clickMode="false"
+            />
             <div class="sm:w-2/3 lg:w-2/5 px-4">
               <h1 class="quote">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                {{ $static.metadata.indexPage.header.textHeader }}
               </h1>
             </div>
             <div
@@ -17,7 +56,7 @@
                   <iframe
                     width="956"
                     height="538"
-                    src="https://www.youtube.com/embed/1lveKJ4cGfw"
+                    :src="$static.metadata.indexPage.header.videoUrl"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
@@ -26,14 +65,16 @@
               </Popup>
               <button @click="videoPopup = !videoPopup">
                 <PlayButton />
-                <div class="sr-only">Assistir ao Vídeo</div>
+                <div class="text-custom-blue-1 font-sans1 font-bold mt-3">
+                  Assista ao Vídeo
+                </div>
               </button>
             </div>
           </div>
           <div class="flex justify-start mb-32 md:mb-0 md:mt-0 px-4">
             <call-to-action
               filled="blue1"
-              :link="$static.generalData.hotmartUrl"
+              :link="$static.metadata.hotmartUrl"
               size="lg"
               class="shadow-2xl transform transition-transform duration-300 hover:scale-110"
             >
@@ -49,47 +90,29 @@
     <section class="bg-custom-darker-blue pt-16 pb-8">
       <div class="container">
         <div class="flex flex-wrap text-white font-sans2">
-          <div class="w-full md:w-1/2 lg:w-1/4 px-4 my-4 lg:m-0 flex">
+          <!-- inicio -->
+          <div
+            class="w-full md:w-1/2 lg:w-1/4 px-4 my-4 lg:m-0 flex"
+            v-for="text in $static.metadata.indexPage.header.bulletsHeader"
+            :key="text.replace(/\s+/g, '')"
+          >
             <div class="w-1/3 flex justify-center">
-              <Work class="text-custom-blue-1 fill-current" />
+              <Cpu class="text-custom-blue-1 fill-current" />
             </div>
             <div class="w-2/3 self-center md:self-start">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              {{ text }}
             </div>
           </div>
-          <div class="w-full md:w-1/2 lg:w-1/4 px-4 my-4 lg:m-0 flex">
-            <div class="w-1/3 flex justify-center">
-              <Work class="text-custom-blue-1 fill-current" />
-            </div>
-            <div class="w-2/3 self-center md:self-start">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore.
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/4 px-4 my-4 lg:m-0 flex">
-            <div class="w-1/3 flex justify-center">
-              <Work class="text-custom-blue-1 fill-current" />
-            </div>
-            <div class="w-2/3 self-center md:self-start">
-              Lorem ipsum dolor sit amet consectetur adipisicing.
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/4 my-4 lg:m-0 px-4 flex">
-            <div class="w-1/3 flex justify-center">
-              <Work class="text-custom-blue-1 fill-current" />
-            </div>
-            <div class="w-2/3 self-center md:self-start">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
-              odio.
-            </div>
-          </div>
+          <!-- fim -->
         </div>
       </div>
     </section>
     <section class="pt-20 pb-32">
       <div class="container">
-        <div class="md:w-2/3 xl:w-1/3 m-auto">
-          <h2 class="title-1 text-custom-red">
-            Lorem ipsum dolor sit amet.
+        <div class="flex justify-center">
+          <h2 class="title-1 text-custom-blue-2">
+            Uma visão sobre o Futuro da Educação <br />
+            que te fará sair de Matrix!
           </h2>
         </div>
         <div class="flex justify-center">
@@ -97,36 +120,26 @@
             class="wysiwyg font-sans1 md:w-11/12 lg:w-2/3 my-16 mx-4 sm:mx-8"
           >
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad veniam
-              modi aliquam et repellendus sunt quo, commodi recusandae, debitis
-              tempore quae labore. Obcaecati est officiis neque, sed saepe
-              perspiciatis debitis deserunt eveniet tempore!
+              Uma visão sobre o Futuro da Educação que te fará sair de Matrix!
             </p>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-              ipsam eaque corrupti dicta pariatur! Dignissimos perspiciatis ad
-              illo inventore, <b>excepturi aperiam accusamus</b> sed repellat
-              quasi in quo enim recusandae eaque libero! Similique sit deleniti
-              eum cumque possimus odit, explicabo debitis necessitatibus nulla
-              eaque modi totam?
+              Depois deste curso, você <b>NUNCA</b> mais verá o futuro do mesmo
+              jeito. Um mergulho filosófico, teórico, metodológico e operacional
+              para você conseguir entender a dimensão da mudança que está por
+              vir e estar melhor preparado para ela.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-              iure aspernatur similique accusantium voluptatibus optio omnis
-              quae totam ullam quod, hic obcaecati iste reiciendis, cumque qui
-              rerum quas dolore quos! Fugiat maiores sit mollitia laudantium rem
-              velit est?
+              Nepomuceno é conhecido pela capacidade de trocar a “placa-mãe” dos
+              seus alunos. Estamos convidando você para vir tomar a “pílula
+              vermelha”.
             </p>
-            <h3 class="title-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae.
-            </h3>
+            <p>Bora?</p>
           </div>
         </div>
         <div class="flex justify-center">
           <call-to-action
             filled="blue1"
-            :link="$static.generalData.hotmartUrl"
+            :link="$static.metadata.hotmartUrl"
             size="lg"
             class="shadow-2xl transform transition-transform duration-300 hover:scale-110"
           >
@@ -151,17 +164,24 @@
           </h2>
         </div>
         <div class="flex flex-wrap justify-center">
-          <div class="w-full md:w-1/2 px-4">
-            <div class="wysiwyg">
-              <p class="text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptatem, architecto suscipit deserunt molestias nihil et
-                perspiciatis dignissimos soluta laborum ullam maxime tenetur
-                alias culpa nemo ratione officiis mollitia natus esse impedit
-                expedita. Repellendus possimus soluta illum nulla voluptatibus
-                autem delectus hic necessitatibus eligendi harum ducimus a illo,
-                fugiat velit voluptates odio optio sit ratione veniam deserunt?
-              </p>
+          <div class="w-full px-4">
+            <div class="wysiwyg flex">
+              <div class="w-1/2">
+                <ul class="lista">
+                  <li>Educadores;</li>
+                  <li>Empreendedores de Educação;</li>
+                  <li>Professores;</li>
+                  <li>Pais;</li>
+                </ul>
+              </div>
+              <div class="w-1/2">
+                <ul class="lista">
+                  <li>Alunos;</li>
+                  <li>Estudantes e Pesquisadores de Pedagogia;</li>
+                  <li>Lideranças Políticas;</li>
+                  <li>Cidadãos Inquietos.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -174,8 +194,15 @@
 
 <static-query>
 query{
-  generalData(id: "1"){
-    hotmartUrl
+  metadata{
+    hotmartUrl,
+    indexPage {
+      header{
+        textHeader,
+        videoUrl,
+        bulletsHeader
+      }
+    },
   }
 }
 </static-query>
@@ -183,7 +210,8 @@ query{
 <script>
 import PlayButton from '~/assets/images/play.svg'
 import RightArrow from '~/assets/images/right-arrow.svg'
-import Work from '~/assets/images/work.svg'
+import GirlVR from '~/assets/images/girl-vr-lines.svg'
+import Cpu from '~/assets/images/cpu.svg'
 import CTA from '~/components/shared/Cta'
 
 import Autor from '~/components/Autor'
@@ -192,6 +220,8 @@ import Depoimentos from '~/components/Depoimentos'
 import Assine from '~/components/Assine'
 import Popup from '~/components/shared/Popup'
 import BlocoCTA from '~/components/BlocoCTA'
+
+import Particles from 'particles.vue'
 
 import 'wysiwyg.css'
 
@@ -218,7 +248,9 @@ export default {
     BlocoCTA,
     Assine,
     Popup,
-    Work
+    Cpu,
+    Particles,
+    GirlVR
   },
   data() {
     return {
@@ -228,7 +260,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .quote {
   @apply .text-white .font-sans2 .text-5xl .font-bold .relative .inline .leading-tight;
 
@@ -244,59 +276,21 @@ export default {
     @apply .text-xl;
   }
 }
-ul.lista {
-  li {
-    list-style-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjYiIHZpZXdCb3g9IjAgMCA2IDYiPjxyZWN0IHdpZHRoPSI2IiBoZWlnaHQ9IjYiIGZpbGw9IiM0MkU5RDYiLz48L3N2Zz4=);
-    margin-bottom: 0.25rem;
-  }
+
+.tsparticles {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
-/******************************
-  Títulos
-*******************************/
-
-.title-1,
-.title-2 {
-  @apply .font-sans2;
+#particles-header-left {
+  left: 0;
+  transform: translateX(-50%);
 }
 
-.title-1 {
-  @apply .text-3xl .text-center .relative .font-bold;
-
-  &::after {
-    content: '';
-    @apply .block .m-auto .mt-6 text-current bg-current;
-    height: 3px;
-    width: 125px;
-  }
-}
-
-.title-2,
-.wysiwyg .title-2 {
-  @apply .text-2xl .font-normal;
-
-  @media (max-width: 360px) {
-    @apply .text-xl;
-  }
-}
-.v--modal-box,
-.popup__content {
-  .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-  }
-
-  .video-container iframe,
-  .video-container object,
-  .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+#particles-header-right {
+  right: 0;
+  transform: translateX(50%);
 }
 </style>

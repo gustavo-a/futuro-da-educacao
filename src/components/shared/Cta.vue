@@ -5,7 +5,7 @@
       v-if="link"
       :class="{
         'bg-custom-blue-1': filled === 'blue1',
-        'bg-guten-cinza-1': filled === 'cinza-1',
+        'bg-custom-red': filled === 'red1',
         'py-3 px-4': size === 'sm',
         'p-4': size === 'md',
         'py-4 px-8': size === 'lg',

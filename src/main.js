@@ -7,6 +7,8 @@ import 'typeface-merriweather'
 import 'typeface-open-sans'
 import 'typeface-raleway'
 
+import '~/assets/styles/main.css'
+
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)

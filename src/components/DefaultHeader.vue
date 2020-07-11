@@ -27,7 +27,7 @@
         >
           <call-to-action
             filled="blue1"
-            :link="$static.generalData.hotmartUrl"
+            :link="$static.metadata.hotmartUrl"
             size="sm"
             class="sm:mx-2 text-sm sm:text-base"
           >
@@ -51,7 +51,7 @@
 
 <static-query>
 query{
-  generalData(id: "1"){
+  metadata{
     hotmartUrl
   }
 }

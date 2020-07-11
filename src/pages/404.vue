@@ -14,7 +14,7 @@
           </p>
           <call-to-action
             filled="blue1"
-            :link="$static.generalData.hotmartUrl"
+            :link="$static.metadata.hotmartUrl"
             size="lg"
             class="shadow-2xl mt-8 transform transition-transform duration-300 hover:scale-110"
           >
@@ -28,7 +28,7 @@
 
 <static-query>
 query{
-  generalData(id: "1"){
+  metadata{
     hotmartUrl
   }
 }
@@ -39,15 +39,6 @@ import PlayButton from '~/assets/images/play.svg'
 import RightArrow from '~/assets/images/right-arrow.svg'
 import CTA from '~/components/shared/Cta'
 
-import DepoimentosSlider from '~/components/DepoimentosSlider'
-import Modulos from '~/components/Modulos'
-import BlocoCTA from '~/components/BlocoCTA'
-import Depoimentos from '~/components/Depoimentos'
-import Assine from '~/components/Assine'
-import Popup from '~/components/shared/Popup'
-
-import 'wysiwyg.css'
-
 export default {
   metaInfo: {
     title: 'Conheça a guerra que mudou tudo!'
@@ -55,13 +46,7 @@ export default {
   components: {
     PlayButton,
     RightArrow,
-    'call-to-action': CTA,
-    DepoimentosSlider,
-    Modulos,
-    BlocoCTA,
-    Depoimentos,
-    Assine,
-    Popup
+    'call-to-action': CTA
   },
   data() {
     return {

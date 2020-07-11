@@ -27,6 +27,12 @@ module.exports = {
   },
   plugins: [
     {
+      use: 'gridsome-source-static-meta',
+      options: {
+        path: './settings/*.json'
+      }
+    },
+    {
       use: 'gridsome-plugin-modal'
     },
     {

@@ -1,0 +1,19 @@
+{
+  "hotmartUrl": "https://hotmart.com",
+  "loginUrl": "",
+  "indexPage": {
+    "header": {
+      "textHeader": "Como se preparar para as mudanças disruptivas que virão?",
+      "videoUrl": "https://www.youtube.com/embed/1lveKJ4cGfw",
+      "bulletsHeader": [
+        "Quais são as causas para a disrupção da educação novo século?",
+        "Por que a disrupção da educação está ocorrendo agora e não no século passado?",
+        "Quais são as macrotendências educacionais para as próximas décadas?",
+        "O que pais, educadores, professores e a sociedade podem fazer agora?"
+      ]
+    }
+  },
+  "fromPrice": false,
+  "productPrice": 399.99,
+  "installments": 10
+}

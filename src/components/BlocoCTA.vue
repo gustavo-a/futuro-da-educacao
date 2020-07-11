@@ -7,8 +7,8 @@
         >
           <div class="w-full md:w-1/2 mb-8 md:mb-0">
             <p class="text-custom-red font-bold text-xl font-sans2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis magni esse explicabo ducimus.
+              Entenda por que o Sapiens vai promover uma mudança profunda e
+              disruptiva na forma de aprender nos próximos anos.
             </p>
           </div>
           <div
@@ -16,7 +16,7 @@
           >
             <call-to-action
               filled="blue1"
-              :link="$static.generalData.hotmartUrl"
+              :link="$static.metadata.hotmartUrl"
               size="lg"
               class="shadow-2xl transform transition-transform duration-300 hover:scale-110"
             >
@@ -34,7 +34,7 @@
 
 <static-query>
 query{
-  generalData(id: "1"){
+  metadata{
     hotmartUrl
   }
 }
