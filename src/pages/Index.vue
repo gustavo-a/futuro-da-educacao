@@ -248,13 +248,8 @@ export default {
   methods: {
     openVideo() {
       this.$modal.show('modal-video', {
-        videoLink: this.videoLink
+        videoLink: 'https://www.youtube.com/embed/1lveKJ4cGfw'
       })
-    }
-  },
-  computed: {
-    videoLink() {
-      return this.$static.metadata.indexPage.videoUrl
     }
   }
 }
