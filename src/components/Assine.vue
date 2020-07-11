@@ -28,8 +28,9 @@
         </div>
         <div class="w-full md:w-1/3 text-white">
           <p class="mb-4">
-            Você pode ignorar o futuro, mas não poderá ignorar as consequências
-            que terá ao ignorá-lo.” (Nepô, inspirado por Ayn Rand).
+            “Você pode ignorar o futuro, mas não poderá ignorar as consequências
+            que terá ao ignorá-lo.” <br />
+            (Nepô, inspirado por Ayn Rand).
           </p>
           <call-to-action
             filled="red1"

@@ -19,11 +19,14 @@
     /> -->
     <div class="container bg-linha">
       <div class="flex flex-wrap justify-between py-4">
-        <g-link to="/" class="px-4 w-full sm:w-1/2" id="logo-header">
-          <Logo />
-        </g-link>
+        <div class="px-4 w-full sm:w-1/2">
+          <g-link to="/" id="logo-header">
+            <Logo />
+          </g-link>
+        </div>
+
         <div
-          class="pr-2 sm:px-4 ml-auto sm:ml-0 text-left grid sm:flex items-start"
+          class="pr-2 sm:px-4 ml-auto sm:ml-0 text-left hidden md:flex items-start"
         >
           <call-to-action
             filled="blue1"
@@ -33,7 +36,6 @@
           >
             <span class="text-custom-darker-blue font-bold">Inscreva-se</span>
           </call-to-action>
-          <!-- https://produtividadeantifragil.club.hotmart.com -->
           <call-to-action
             border
             link="https://hotmart.com"
@@ -76,8 +78,17 @@ export default {
 
 <style lang="scss">
 #logo-header {
+  svg {
+    max-width: 300px;
+  }
+
   @media (max-width: 639px) {
-    width: 200px;
+    max-width: 100%;
+
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 </style>

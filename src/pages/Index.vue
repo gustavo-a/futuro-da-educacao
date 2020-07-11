@@ -3,8 +3,13 @@
     <div class="bg-custom-darker-blue">
       <section class="flex">
         <div class="container relative pb-12 mt-auto">
-          <GirlVR class="absolute top-0 right-0 left-0 m-auto h-full z-0" />
-          <div class="flex pt-8 md:pt-32 pb-8 md:pb-20">
+          <GirlVR
+            class="absolute hidden md:block top-0 right-0 left-0 m-auto h-full z-0"
+          />
+          <GirlVR2
+            class="absolute block md:hidden top-0 right-0 left-0 m-auto h-full z-0"
+          />
+          <div class="flex mt-32 md:mt-0 pt-8 md:pt-32 pb-8 md:pb-20">
             <Particles
               id="particles-header-left"
               class="tsparticles"
@@ -59,7 +64,7 @@
               </button>
             </div>
           </div>
-          <div class="flex justify-start mb-32 md:mb-0 md:mt-0 px-4">
+          <div class="flex justify-start mb-0 md:mt-0 px-4">
             <call-to-action
               filled="blue1"
               :link="$static.metadata.hotmartUrl"
@@ -199,6 +204,7 @@ query{
 import PlayButton from '~/assets/images/play.svg'
 import RightArrow from '~/assets/images/right-arrow.svg'
 import GirlVR from '~/assets/images/girl-vr-lines.svg'
+import GirlVR2 from '~/assets/images/girl-vr-lines-2.svg'
 import Cpu from '~/assets/images/cpu.svg'
 import CTA from '~/components/shared/Cta'
 
@@ -236,7 +242,8 @@ export default {
     Assine,
     Cpu,
     Particles,
-    GirlVR
+    GirlVR,
+    GirlVR2
   },
   methods: {
     openVideo() {
@@ -280,6 +287,9 @@ export default {
 #particles-header-left {
   left: 0;
   transform: translateX(-50%);
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 #particles-header-right {

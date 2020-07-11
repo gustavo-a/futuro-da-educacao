@@ -29,7 +29,7 @@
             ></a>
           </div>
         </div>
-        <div class="mt-16 lg:mt-0 pl-8 lg:pl-8 xl:w-1/3">
+        <div class="mt-16 lg:mt-0 pl-0 md:pl-8 xl:w-1/3">
           <div>
             <g-link
               to="/duvidas/"
@@ -75,12 +75,14 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-  background: #03072a;
-
   .wysiwyg {
     p {
       @apply .mb-2 .leading-tight;
     }
+  }
+
+  svg {
+    max-width: 300px;
   }
 }
 </style>
