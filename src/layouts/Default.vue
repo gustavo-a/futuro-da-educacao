@@ -6,7 +6,7 @@
     <DefaultFooter v-else />
     <modal
       name="modal-video"
-      classes="p-8 bg-white rounded"
+      classes="p-1 md:p-8 bg-white rounded"
       height="auto"
       width="70%"
       :maxWidth="1000"
