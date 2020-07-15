@@ -29,30 +29,36 @@
           <div class="glide__slides">
             <Depoimento
               class="glide__slide"
-              video-link="https://www.youtube.com/embed/Ga4cgvplTFc"
+              video-link="https://www.youtube.com/embed/WCgc8C-F76k"
             >
               <template #imagem>
-                <g-image src="https://placedog.net/400/500" alt="Fulano" />
+                <g-image
+                  src="~/assets/images/depoimentos/luciano-pires.jpg"
+                  alt="Luciano Pires"
+                />
               </template>
               <template #nome>
-                Fulano
+                Luciano Pires
               </template>
               <template #descricao>
-                Lorem ipsum dolor sit amet.
+                Palestrante
               </template>
             </Depoimento>
             <Depoimento
               class="glide__slide"
-              video-link="https://www.youtube.com/embed/Ga4cgvplTFc"
+              video-link="https://www.youtube.com/embed/SeK2986i8zg"
             >
               <template #imagem>
-                <g-image src="https://placedog.net/400/500" alt="Fulano" />
+                <g-image
+                  src="~/assets/images/depoimentos/mauricio-vargas.jpg"
+                  alt="Maurício Vargas"
+                />
               </template>
               <template #nome>
-                Fulano
+                Mauricio Vargas
               </template>
               <template #descricao>
-                Lorem ipsum dolor sit amet.
+                Fundador do site Reclame Aqui
               </template>
             </Depoimento>
             <Depoimento

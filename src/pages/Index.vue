@@ -148,6 +148,7 @@
     <Autor />
     <BlocoCTA />
     <Depoimentos />
+    <TextosDepoimentos />
 
     <section class="py-32">
       <div class="container px-4">
@@ -211,6 +212,7 @@ import CTA from '~/components/shared/Cta'
 import Autor from '~/components/Autor'
 import Modulos from '~/components/Modulos'
 import Depoimentos from '~/components/Depoimentos'
+import TextosDepoimentos from '~/components/TextosDepoimentos'
 import Assine from '~/components/Assine'
 import BlocoCTA from '~/components/BlocoCTA'
 
@@ -243,7 +245,8 @@ export default {
     Cpu,
     Particles,
     GirlVR,
-    GirlVR2
+    GirlVR2,
+    TextosDepoimentos
   },
   methods: {
     openVideo() {
