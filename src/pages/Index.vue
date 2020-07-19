@@ -222,16 +222,16 @@ import 'wysiwyg.css'
 
 export default {
   metaInfo: {
-    title: 'Como aumentar sua performance em meio a adversidades',
+    title: 'Como se preparar para as mudanças disruptivas que virão?',
     meta: [
       {
         key: 'description',
         name: 'description',
         content:
-          'Um curso sobre Produtividade para quem quer ir além das ações táticas e mergulhar na estratégia: desenvolver um Olhar Produtivo. Provocativo, irreverente e com um material de apoio riquíssimo que em sua maior parte você não encontra aqui no Brasil.'
+          'Uma visão sobre o Futuro da Educação que te fará sair de Matrix!'
       }
     ],
-    link: [{ rel: 'canonical', href: '' }]
+    link: [{ rel: 'canonical', href: 'https://ofuturodaeducao.com' }]
   },
   components: {
     PlayButton,

@@ -21,7 +21,7 @@
       <div class="flex flex-wrap justify-between py-4">
         <div class="px-4 w-full sm:w-1/2">
           <g-link to="/" id="logo-header">
-            <Logo />
+            <g-image class="logo" src="@/assets/images/logo.png"> </g-image>
           </g-link>
         </div>
 
@@ -62,7 +62,6 @@ query{
 <script>
 import CTA from '~/components/shared/Cta'
 import Countdown from '~/components/shared/Countdown'
-import Logo from '~/assets/images/logo.svg'
 import User from '~/assets/images/user.svg'
 
 export default {
@@ -70,7 +69,6 @@ export default {
   components: {
     'call-to-action': CTA,
     Countdown,
-    Logo,
     User
   }
 }
@@ -78,14 +76,14 @@ export default {
 
 <style lang="scss">
 #logo-header {
-  svg {
+  img {
     max-width: 300px;
   }
 
   @media (max-width: 639px) {
     max-width: 100%;
 
-    svg {
+    img {
       max-width: 100%;
       height: auto;
     }

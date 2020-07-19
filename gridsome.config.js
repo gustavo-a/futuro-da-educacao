@@ -14,7 +14,7 @@ const postcssPlugins = [tailwind(), autoprefixer()]
 
 module.exports = {
   siteName: 'Futuro da Educação',
-  siteUrl: 'https://distracted-goldwasser-bb0034.netlify.app',
+  siteUrl: 'https://ofuturodaeducao.com',
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')
     svgRule.uses.clear()

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="flex flex-wrap justify-between px-4">
         <div class="lg:w-1/2 xl:w-2/5">
-          <Logo />
+          <g-image class="logo" src="@/assets/images/logo.png"> </g-image>
           <p class="mt-8 text-white">
             © 2020 - Empresa. Todos os direitos reservados. <br />
             CNPJ: 00.000.000/0001-99.
@@ -62,13 +62,11 @@
 </template>
 
 <script>
-import Logo from '~/assets/images/logo_rodape.svg'
 import CTA from '~/components/shared/Cta'
 export default {
   name: 'DefaultFooter',
   components: {
-    'call-to-action': CTA,
-    Logo
+    'call-to-action': CTA
   }
 }
 </script>
@@ -81,7 +79,7 @@ footer {
     }
   }
 
-  svg {
+  .logo {
     max-width: 300px;
   }
 }
