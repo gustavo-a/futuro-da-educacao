@@ -63,58 +63,19 @@
             </Depoimento>
             <Depoimento
               class="glide__slide"
-              video-link="https://www.youtube.com/embed/Ga4cgvplTFc"
+              video-link="https://www.youtube.com/embed/2oivSaxepYU"
             >
               <template #imagem>
-                <g-image src="https://placedog.net/400/500" alt="Fulano" />
+                <g-image
+                  src="~/assets/images/depoimentos/gustavo-carriconde.png"
+                  alt="Gustavo Carriconde"
+                />
               </template>
               <template #nome>
-                Fulano
+                Gustavo Carriconde
               </template>
               <template #descricao>
-                Lorem ipsum dolor sit amet.
-              </template>
-            </Depoimento>
-            <Depoimento
-              class="glide__slide"
-              video-link="https://www.youtube.com/embed/Ga4cgvplTFc"
-            >
-              <template #imagem>
-                <g-image src="https://placedog.net/400/500" alt="Fulano" />
-              </template>
-              <template #nome>
-                Fulano
-              </template>
-              <template #descricao>
-                Lorem ipsum dolor sit amet.
-              </template>
-            </Depoimento>
-            <Depoimento
-              class="glide__slide"
-              video-link="https://www.youtube.com/embed/Ga4cgvplTFc"
-            >
-              <template #imagem>
-                <g-image src="https://placedog.net/400/500" alt="Fulano" />
-              </template>
-              <template #nome>
-                Fulano
-              </template>
-              <template #descricao>
-                Lorem ipsum dolor sit amet.
-              </template>
-            </Depoimento>
-            <Depoimento
-              class="glide__slide"
-              video-link="https://www.youtube.com/embed/Ga4cgvplTFc"
-            >
-              <template #imagem>
-                <g-image src="https://placedog.net/400/500" alt="Fulano" />
-              </template>
-              <template #nome>
-                Fulano
-              </template>
-              <template #descricao>
-                Lorem ipsum dolor sit amet.
+                Fundador do Resumocast
               </template>
             </Depoimento>
           </div>
