@@ -78,12 +78,28 @@
                 Fundador do Resumocast
               </template>
             </Depoimento>
+            <Depoimento
+              class="glide__slide"
+              video-link="https://www.youtube.com/embed/7dqqjAZ_Dz4"
+            >
+              <template #imagem>
+                <g-image
+                  src="~/assets/images/depoimentos/tito.jpg"
+                  alt="Tito Santos"
+                />
+              </template>
+              <template #nome>
+                Tito Santos
+              </template>
+              <template #descricao>
+                CEO da Agência Azul
+              </template>
+            </Depoimento>
           </div>
           <div class="glide__bullets" data-glide-el="controls[nav]">
             <button class="glide__bullet" data-glide-dir="=0"></button>
             <button class="glide__bullet" data-glide-dir="=1"></button>
             <button class="glide__bullet" data-glide-dir="=2"></button>
-            <button class="glide__bullet" data-glide-dir="=3"></button>
           </div>
         </div>
       </div>
