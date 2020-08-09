@@ -251,7 +251,7 @@ export default {
   methods: {
     openVideo() {
       this.$modal.show('modal-video', {
-        videoLink: 'https://www.youtube.com/embed/1lveKJ4cGfw'
+        videoLink: 'https://www.youtube.com/embed/0uEQG38-_sQ'
       })
     }
   }
