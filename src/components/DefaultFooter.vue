@@ -5,8 +5,9 @@
         <div class="lg:w-1/2 xl:w-2/5">
           <g-image class="logo" src="@/assets/images/logo.png"> </g-image>
           <p class="mt-8 text-white">
-            © 2020 - Empresa. Todos os direitos reservados. <br />
-            CNPJ: 00.000.000/0001-99.
+            © 2020 - Pontonet Servicos Integrados LTDA. Todos os direitos
+            reservados. <br />
+            CNPJ: 00.977.020/0001-17.
           </p>
           <div class="flex justify-start mt-8">
             <a

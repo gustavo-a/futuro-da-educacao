@@ -13,27 +13,18 @@
       <div class="flex justify-center px-4">
         <div class="wysiwyg w-full md:w-10/12 lg:w-8/12">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            dolor deleniti ipsa, quas facere et necessitatibus corrupti qui
-            consectetur veniam eaque cum consequatur, modi quo. Perferendis
-            veniam et sequi explicabo.
+            O Código de Defesa do Consumidor, Art. 49, garante o direito de
+            desistência da compra do produto ou serviço, no prazo de 07 dias a
+            contar da contratação.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            nostrum rerum consectetur ad neque inventore repellendus minima odio
-            nisi adipisci, architecto minus nesciunt voluptas omnis temporibus?
-            Ducimus eligendi facilis alias eos, unde vero ea a, totam culpa
-            numquam cupiditate velit.
+            Mas nós vamos mais longe. Se o consumidor exercitar o direito de
+            arrependimento previsto neste artigo, em até 30 dias os valores
+            eventualmente pagos serão devolvidos integralmente.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            praesentium rem beatae molestias nemo facilis obcaecati nesciunt!
-            Quidem corrupti modi facilis rerum quia laborum, atque, et sequi
-            dicta odio deleniti voluptas amet officia maiores inventore sit
-            dolorum blanditiis voluptatum vitae nulla! Doloribus cupiditate
-            perspiciatis accusamus animi nemo quam aspernatur maiores
-            repellendus, fuga quisquam quidem. Error rem dolores doloribus illo
-            alias molestiae enim odio.
+            Lembra da Sears? "Satisfação garantida ou seu dinheiro de volta"?
+            Conosco é assim.
           </p>
         </div>
       </div>

@@ -14,11 +14,11 @@
         <div class="wysiwyg w-full md:w-10/12 lg:w-8/12">
           <p>
             Este texto apresenta a política da
-            <b>[INSIRA NOME DA EMPRESA]</b>
-            de privacidade e tratamento de dados através do site [INSIRA URL DO
-            SITE], em atendimento à Lei Geral de Proteção de Dados (LGPD) e à
-            General Data Protect Regulament – GDPR (quando se tratar de dados de
-            residentes na Comunidade Europeia).
+            <b>Pontonet Servicos Integrados LTDA</b>
+            de privacidade e tratamento de dados através do site
+            cursoofuturodaeducacao.com.br, em atendimento à Lei Geral de
+            Proteção de Dados (LGPD) e à General Data Protect Regulament – GDPR
+            (quando se tratar de dados de residentes na Comunidade Europeia).
           </p>
           <p>
             Descrevemos como os seus dados pessoais são coletados, usados e
@@ -47,8 +47,8 @@
             Também coletamos informações sobre a origem de seu acesso (se foi a
             partir de algum mecanismo de busca, rede social, endereçamento
             direto, anúncios, etc), bem como as páginas do nosso site que você
-            visita, para melhor identificação dos assuntos da [INSIRA NOME DA
-            EMPRESA] que são do seu interesse.
+            visita, para melhor identificação dos assuntos da Pontonet Servicos
+            Integrados LTDA que são do seu interesse.
           </p>
           <p>
             Caso você preencha algum formulário apresentado pelo site, outros
@@ -68,9 +68,10 @@
           </p>
           <p>
             Também podemos obter dados pessoais disponibilizados publicamente
-            por parceiros da [INSIRA NOME DA EMPRESA], incluindo redes sociais.
-            A [INSIRA NOME DA EMPRESA] observará as limitações de autorização
-            concedidas pelos titulares dos dados aos respectivos parceiros.
+            por parceiros da Pontonet Servicos Integrados LTDA, incluindo redes
+            sociais. A Pontonet Servicos Integrados LTDA observará as limitações
+            de autorização concedidas pelos titulares dos dados aos respectivos
+            parceiros.
           </p>
           <p>
             Se você é um residente europeu ou se encontra fisicamente em algum
@@ -86,17 +87,17 @@
             solicite a exclusão das mesmas.
           </p>
           <p>
-            Mesmo mediante a sua solicitação de eliminação, a [INSIRA NOME DA
-            EMPRESA] poderá conservar alguns dos seus dados nas seguintes
+            Mesmo mediante a sua solicitação de eliminação, a Pontonet Servicos
+            Integrados LTDA poderá conservar alguns dos seus dados nas seguintes
             situações : cumprimento de obrigação legal ou regulatória; estudo
-            por órgão de pesquisa, transferência a terceiro e uso pela [INSIRA
-            NOME DA EMPRESA], com anonimização dos dados pessoais, sempre que
-            possível.
+            por órgão de pesquisa, transferência a terceiro e uso pela Pontonet
+            Servicos Integrados LTDA, com anonimização dos dados pessoais,
+            sempre que possível.
           </p>
           <p>
             Poderemos atualizar esta política de privacidade de tempos em
-            tempos, seja para melhor adaptação às condutas da [INSIRA NOME DA
-            EMPRESA], seja para atendimento às leis e regulamentos.
+            tempos, seja para melhor adaptação às condutas da Pontonet Servicos
+            Integrados LTDA, seja para atendimento às leis e regulamentos.
           </p>
         </div>
       </div>
