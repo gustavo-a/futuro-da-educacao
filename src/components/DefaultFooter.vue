@@ -38,7 +38,7 @@
             >
               Dúvidas
             </g-link>
-            <call-to-action link="$static.metadata.loginUrl" size="lg" border>
+            <call-to-action :link="$static.metadata.loginUrl" size="lg" border>
               <span class="text-custom-blue-1 text-sm">Login</span>
             </call-to-action>
           </div>
