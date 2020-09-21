@@ -30,7 +30,7 @@
         >
           <call-to-action
             filled="blue1"
-            :link="$static.metadata.hotmartUrl"
+            :link="$static.metadata.loginUrl"
             size="sm"
             class="sm:mx-2 text-sm sm:text-base"
           >
@@ -38,7 +38,7 @@
           </call-to-action>
           <call-to-action
             border
-            link="https://hotmart.com"
+            :link="$static.metadata.hotmartUrl"
             size="sm"
             class="ml-2 sm:mx-2 text-sm sm:text-base"
             style="display:contents"
@@ -54,7 +54,8 @@
 <static-query>
 query{
   metadata{
-    hotmartUrl
+    hotmartUrl,
+    loginUrl
   }
 }
 </static-query>
